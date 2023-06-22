@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ulearningap/screens/on_boarding_screen.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'common/string_constant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,14 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: APP_NAME,
       theme: ThemeData(
-        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const OnBoardingScreen(),
-      routes: {
-        // '/signUpPage': (context) => Container()
+      routes: const {
       },
     );
   }
